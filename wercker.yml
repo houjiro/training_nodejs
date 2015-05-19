@@ -15,3 +15,12 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+
+  after-steps:
+      - sherzberg/slack-notify:
+          subdomain: qdopp
+          token: $SLACK_TOKEN
+          username: wercker
+          webhook_url: $SLACK_WEBHOOK_URL
+          channel: "#develop-houjiro"
+          icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
