@@ -21,5 +21,6 @@ build:
       subdomain: qdopp
       token: $SLACK_TOKEN
       channel: "#develop-houjiro"
+      webhook_url: $SLACK_WEBHOOK_URL
       username: wercker
       icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
