@@ -17,10 +17,9 @@ build:
           echo "npm version $(npm -v) running"
 
   after-steps:
-      - sherzberg/slack-notify:
+      - slack-notifier:
           subdomain: qdopp
-          token: $SLACK_TOKEN
           username: ms-nodejs-wercker
-          webhook_url: $SLACK_WEBHOOK_URL
+          url: https://hooks.slack.com/services/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
           channel: "#develop-houjiro"
           icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
