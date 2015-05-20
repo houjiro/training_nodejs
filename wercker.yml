@@ -17,9 +17,9 @@ build:
           echo "npm version $(npm -v) running"
 
   after-steps:
-      - wantedly/pretty-slack-notify:
+      - slack-notifier:
           subdomain: qdopp
           username: ms-nodejs-wercker
-          webhook_url: https://hooks.slack.com/services/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
+          url: https://hooks.slack.com/services/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
           channel: "#develop-houjiro"
           icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
